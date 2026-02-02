@@ -1,0 +1,40 @@
+1.
+
+https://medium.com/@authfy/getting-started-with-swiftui-and-firebase-a-complete-guide-e7c25b7cd9c4
+
+#REMOVE
+
+import SwiftData
+
+....
+
+ 	    #if DEBUG
+            let providerFactory = AppCheckDebugProviderFactory()
+            AppCheck.setAppCheckProviderFactory(providerFactory)
+            #endif
+....
+
+
+2. Remove Xcode 14.1 beta - Firebase issues
+<USE YOUR PROJECT NAME BELOW>
+
+macos@macoss-Mac ~ % rm Library/Developer/Xcode/DerivedData/firebasetest-cehokjtubbsgqjgmqmguaigzunja/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/AuthProvider/GameCenter/FIRGameCenterAuthProvider.m 
+
+macos@macoss-Mac ~ % cat > Library/Developer/Xcode/DerivedData/firebasetest-cehokjtubbsgqjgmqmguaigzunja/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/AuthProvider/GameCenter/FIRGameCenterAuthProvider.m << 'EOF' 
+heredoc> //test dummy file
+heredoc> EOF
+
+
+3. Enable Keychain Sharing
+
+In Xcode:
+
+- Select your App Target
+
+- Go to Signing & Capabilities
+
+- Click + Capability
+
+- Add Keychain Sharing
+
+That’s all you need — no other config.
