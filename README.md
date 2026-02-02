@@ -1,4 +1,9 @@
 SwiftUI and Firebase: Building Modern iOS Apps with a Cloud‑Backed Stack
+
+###Check Lab4_Firebase_SwiftUI_Steps.txt
+
+
+
 Introduction
 
 SwiftUI is Apple’s modern user‑interface framework. Apple describes it as a declarative system in which you write down the desired outcome and let the framework translate that into a functional UI. Declarative code helps keep SwiftUI apps succinct and readable. Views are composed hierarchically using struct types, and SwiftUI automatically updates the UI when the state changes. The framework runs on all Apple platforms—iOS, macOS, watchOS and tvOS—making it a unified approach to interface design.
